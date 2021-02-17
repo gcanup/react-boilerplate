@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Button } from 'reactstrap';
+import './App.scss';
 
 function App() {
+  const [count, setCount] = useState(1);
+  const star = [{ id: 1, value: '*' }, { id: 2, value: '*' }, { id: 3, value: '*' }, { id: 4, value: '*' }, { id: 5, value: '*' }]
+
+  const starClick = (id) => {
+    setCount(id)
+    console.log(count)
+  }
+
+  console.log()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Button>Reactstrap button</Button>
+      <div id='rating'>
+        {star.map(x => {
+          return <>
+            <span
+              key={Math.random()}
+              onClick={() => starClick(x.id)}
+              className={x.id <= count ? 'active' : ''}
+            >
+              {x.value}
+            </span>
+            <br />
+          </>
+        })}
+      </div>
+    </div >
   );
 }
 
 export default App;
+
+
+
