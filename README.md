@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Littledata front-end test project
+## Overall Instructions
+Overall, this challenge is about writing good, clean code, and following the desired implementation closely.
+Using the web for help is perfectly fine, but be sensible: if a critical chunk of your solution is copied from a github repo, that’s clearly not ok. Remember that your solution should demonstrate your ability as far as possible. Any significant use of external code must be referenced.
+## Objective
+You have to create a multi-page HTML welcome flow that would be shown to Littledata users as they enter the application.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The welcome flow has to adapt to the user’s state, and only show relevant screens to that user. For example, for a new user we’d like to show a survey and ask some questions about their setup. However, for a returning user, we’d like to take them directly to the app.
 
-## Available Scripts
+In the repo are all the assets, wireframes, and a link to the prototype to clearly understand the desired end result.
 
-In the project directory, you can run:
+We want to see how you solve the problem, how you write the code and how you create the UI.
+## Desired Implementation
+This is a frontend test, and no backend implementation is expected. For the forms, you can log the user inputs to the console upon submission.
+For ‘supporting screens’, a low-fidelity implementation is acceptable as long as it fits well in the flow. Screenshots below.
+For core screens, a pixel perfect implementation is expected (as far as possible). Screenshots below.
 
-### `npm start`
+## Screens
+### Supporting Screens x2
+![](./Wireframes/startScreenReadme.png)
+![](./Wireframes/endScreenReadme.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Core Screens x3
+![](./Wireframes/welcomeScreen1Readme.png)
+![](./Wireframes/welcomeScreen2Readme.png)
+![](./Wireframes/welcomeScreen3Readme.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Note
+**WELCOME SCREEN** 3 should only be shown to the user when their **Store URL** contains `myshopify.com`. In all other cases, take the user directly to the end screen.
+For clarity, in the prototype ([link](https://www.figma.com/proto/k3ecWPPwEE6IqzI2H6DHK4/Frontend-Developer-Test?node-id=1%3A231&viewport=266%2C395%2C0.06883514672517776&scaling=scale-down-width) below), we have added these as 2 separate cases (**CASE** 1 & **CASE 2**) next to the Store URL form input on **WELCOME SCREEN 1**.
+## Prototype Link
+https://www.figma.com/proto/k3ecWPPwEE6IqzI2H6DHK4/Frontend-Developer-Test?node-id=1%3A231&viewport=266%2C395%2C0.06883514672517776&scaling=scale-down-width
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## What we’re looking for
+At a high level, a great solution is one which:
+- Delivers all of the desired functionality
+- Could be picked up by a colleague and understood quickly
+- Could be extended or reworked in the future
+- Uses the features of your chosen programming language well
+- Handles unexpected inputs appropriately
+- To be specific, your code will be evaluated for:
+- Functionality (whether it solves the problem)
+- Code quality (e.g. appropriate use of functions)
+- Cleanliness (e.g. variable naming)
+- Test coverage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## What to submit and how
+Host the project with a service of your choice and send us a URL link for us to view
+Please fork this repo and send us a link to your fork. Or send us a Zip file.
+The notes.txt file should include:
+- Brief instructions on how to run your code
+- Any notes we should bear in mind (e.g. why you made an unusual choice)
+- A brief note on what you found hardest about the challenge
+- A brief note on how you could improve your code further
+- Any feedback to us on how to improve either the challenge itself or the recruitment process so far
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Good Luck!
