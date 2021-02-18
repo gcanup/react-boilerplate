@@ -12,4 +12,15 @@
             padding: 30px;
         }
     }
+
+    @media only screen and (max-width: 768px) {
+        h2 {
+            margin-bottom: 10px !important;
+            font-size: 26px;
+        }
+
+        .users {
+            margin-top: 10px;
+        }
+    }
 }

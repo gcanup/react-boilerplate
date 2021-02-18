@@ -18,10 +18,16 @@
     }
 
     .right-content {
-        width: 50%;
-
+        width: 27%;
+        max-width: 520px;
+        margin: auto;
         .heading {
             margin-top: 48px;
+        }
+
+        .col {
+            padding-left: 0;
+            padding-right: 0;
         }
 
         .first-page {
@@ -120,4 +126,58 @@
             background-color: #00c1b9;
 
         }
+
+    @media only screen and (max-width: 992px) {
+        .left-content {
+            display: none;
+        }
+
+        .right-content {
+            width: 54%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        .right-content {
+            width: 72%;
+            min-width: 290px;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+
+        .right-content {
+            padding: 20px 0;
+            .heading {
+                margin-top: 10px;
+            }
+
+            .progress {
+                margin-bottom: 15px
+            }
+
+            .first-page {
+                margin-top: 10px;
+
+                label {
+                    margin-bottom: 10px !important;
+                    margin-top: 0 !important;
+                }
+            }
+
+            .second-page {
+                h5 {
+                    margin-top: 10px !important;
+                }
+
+                .radio-btn {
+                    .form-check-label {
+                        margin-bottom: 10px !important;
+                    }
+
+                }
+            }
+        }
+    }
 }

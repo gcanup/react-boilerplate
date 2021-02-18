@@ -7,19 +7,19 @@ import '../styles/start.scss'
 
 const StartScreen = (props) => {
   return (
-    <div className="start-screen w-75 align-self-center">
+    <div className="start-screen w-75 align-self-center mt-2 mb-2">
       <h2 className='mb-5'>Littledata Welcome Flow Test</h2>
       <Row>
         {users.map(user => {
           return (
-            <Col sm='4' key={user.id} className='d-flex align-items-stretch'>
+            <Col md='4' key={user.id} className='d-flex align-items-stretch users'>
               <Card>
                 <FontAwesomeIcon icon={user.icon} size='lg' />
                 <CardTitle tag="h5" className='mt-3'>{user.name}</CardTitle>
                 <CardText className='d-table-cell'>{user.desc}</CardText>
                 <Button
-                  className='screen-btn mt-5'
-                  onClick={() => props.history.push('/welcome')}>
+                  className='screen-btn mb-3 mt-2'
+                  onClick={() => props.history.push(user.path)}>
                   Enter {user.name}
                 </Button>
               </Card>
