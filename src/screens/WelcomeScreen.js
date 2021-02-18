@@ -13,7 +13,7 @@ const WelcomeScreen = (props) => {
 
   return (
     <Row className='welcome-screen d-flex w-100'>
-      <Col sm='6' className='left-content'><div className='backdrop' /> </Col>
+      <Col sm='6' className='left-content pl-0 pr-0'><div className='backdrop' /> </Col>
       <Col sm='6' className='right-content align-self-center'>
         <div>
           <img src={logo} alt='little data logo' className='logo' />
