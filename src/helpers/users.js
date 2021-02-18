@@ -11,7 +11,7 @@ const users = [
     {
         id: 2,
         name: 'Claire',
-        desc: 'Claire is a new customer for littledata. We want her to go through the full survey so that we can properly setup his account',
+        desc: 'Claire is a new customer for littledata. We want her to go through the full survey so that we can properly setup her account',
         icon: faUserTie,
         path:'/welcome'
     },

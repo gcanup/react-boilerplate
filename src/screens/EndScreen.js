@@ -10,7 +10,7 @@ const EndScreen = (props) => {
       <h2>Littledata App</h2>
       <img src={bodyContent} className='w-50' /><br />
       <Button
-        className='mt-5 screen-btn'
+        className='mt-5 screen-btn pl-3 pr-3'
         color='success'
         onClick={() => props.history.push('/')}
         >

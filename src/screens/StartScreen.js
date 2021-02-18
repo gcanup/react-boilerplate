@@ -18,7 +18,7 @@ const StartScreen = (props) => {
                 <CardTitle tag="h5" className='mt-3'>{user.name}</CardTitle>
                 <CardText className='d-table-cell'>{user.desc}</CardText>
                 <Button
-                  className='screen-btn mb-3 mt-2'
+                  className='screen-btn w-50 mb-3 mt-2'
                   onClick={() => props.history.push(user.path)}>
                   Enter {user.name}
                 </Button>
