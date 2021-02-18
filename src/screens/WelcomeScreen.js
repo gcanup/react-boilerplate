@@ -1,15 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Row, Col, Progress } from 'reactstrap'
+import PropTypes from 'prop-types'
 import FirstPage from '../Components/FirstPage'
 import SecondPage from '../Components/SecondPage'
 import ThirdPage from '../Components/ThirdPage'
 import logo from '../images/Littledata-Logo.svg'
-import PropTypes from 'prop-types'
+import { Context } from "../helpers/context";
 import '../styles/welcome-screen.scss'
 
 const WelcomeScreen = (props) => {
   const [page, setPage] = useState('first')
   const [url, setUrl] = useState('')
+  const [context, setContext] = useContext(Context)
+
+  useEffect(() => {
+    console.log(context, setContext)
+    context === 'second' && setPage('second')
+  }, [])
 
   return (
     <Row className='welcome-screen d-flex w-100'>
@@ -18,7 +25,7 @@ const WelcomeScreen = (props) => {
         <div>
           <img src={logo} alt='little data logo' className='logo' />
           <h4 className='heading'> {page === 'third' ? 'Choose Destination' : 'Welcome to Littledata'}</h4>
-          <Progress value={page === 'first' ? 50 : 100} className={page === 'third' && 'd-none'} />
+          <Progress value={page === 'first' ? 50 : 100} className={page === 'third' ? 'd-none' : ''} />
           {page === 'first' &&
             <FirstPage
               nextPage={() => setPage('second')}

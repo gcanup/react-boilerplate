@@ -1,11 +1,20 @@
-import React from 'react'
+import React , {useContext} from 'react'
 import { Card, CardTitle, CardText, Row, Col, Button } from 'reactstrap';
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import users from '../helpers/users'
+import { Context } from "../helpers/context";
 import '../styles/start.scss'
 
 const StartScreen = (props) => {
+  const [context, setContext] = useContext(Context)
+
+  const clickHandler = (user) => {
+    console.log(context)
+    props.history.push(user.path)
+    setContext(user.landingPage)
+  }
+
   return (
     <div className="start-screen w-75 align-self-center mt-2 mb-2">
       <h2 className='mb-5'>Littledata Welcome Flow Test</h2>
@@ -19,7 +28,7 @@ const StartScreen = (props) => {
                 <CardText className='d-table-cell'>{user.desc}</CardText>
                 <Button
                   className='screen-btn w-50 mb-3 mt-2'
-                  onClick={() => props.history.push(user.path)}>
+                  onClick={() => clickHandler(user)}>
                   Enter {user.name}
                 </Button>
               </Card>
