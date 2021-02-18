@@ -1,0 +1,123 @@
+.welcome-screen {
+    .logo {
+        width: 40px;
+    }
+
+    .left-content {
+        background-color: #10a69c;
+        
+        .backdrop {
+            background: url('../images/Pattern\ Boxes@2x.png') no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            width: 100%;
+            min-height: 100vh;
+        }
+    }
+
+    .right-content {
+        width: 50%;
+
+        .heading {
+            margin-top: 48px;
+        }
+
+        .first-page {
+            margin-top: 48px;
+
+            .form-control {
+                padding: 16px ;
+            }
+            .email-section {
+                background-color: #d6efed;
+                margin-top: 48px;
+                padding: 16px;
+                .form-control {
+                    margin:16px 0;
+                }
+
+                .form-check-label {
+                    padding-left: 16px;
+                }
+            }
+            .next-btn {
+                margin-top: 48px;
+                float:  right;
+                background-color: #e8e8e8;
+                color: #66696a;
+
+                .svg-inline--fa {
+                    font-size: 12px;
+                }
+            }
+
+        }
+
+        .second-page {
+            .radio-btn {
+                margin-top: 24px;
+                font-size:14px;
+
+                .form-check-label {
+                    margin-bottom: 24px;
+                }
+            }
+
+            .footer {
+                margin-top: 48px;
+                .svg-inline--fa {
+                    font-size: 12px;
+                }
+
+                button {
+                    border:none;
+                    border-radius:0
+                }
+                .prev{
+                    background-color: #e8e8e8;
+                    color: #66696a;
+                }
+
+                .next {
+                    background-color: #10a69c;
+                    color: white;
+                }
+            }
+        }
+
+        .third-page {
+            p {
+                margin-top: 48px;
+                margin-bottom: 80px;
+            }
+            .img-box {
+                // width: 100px;
+                box-shadow: 1px 2px 4px 8px #88888821;
+                padding: 32px 24px;
+                text-align: center;
+            img {
+                height: 60px;
+                width: 60px;
+                margin-bottom: 24px;
+                margin-left: auto;
+            }
+            h5 {
+                margin-bottom: 0;
+            }
+            }
+        }
+        }
+
+        .progress {
+            height: 5px;
+            margin-top: 16px;
+            margin-bottom: 48px;
+        }
+
+        .progress-bar {
+            background-color: #00c1b9;
+
+        }
+}

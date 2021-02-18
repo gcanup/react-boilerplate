@@ -1,3 +1,15 @@
 .start-screen {
-    // min-height: 100vh
+    .card {
+        border: none;
+        .svg-inline--fa {
+            margin: auto;
+            font-size: 60px;
+            color: #004e46;
+        }
+
+        .card-text {
+            background-color: #efefef;
+            padding: 30px;
+        }
+    }
 }
